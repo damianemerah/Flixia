@@ -1,0 +1,18 @@
+.cta {
+  text-align: center;
+  border-bottom: 10px solid rgb(43, 40, 40);
+  padding: 7rem 4.5rem;
+
+  &__content {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__text {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+  }
+}

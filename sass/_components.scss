@@ -1,0 +1,46 @@
+.logo {
+  width: 15.7rem;
+
+  @include response(phone) {
+    width: 10rem;
+  }
+}
+
+.cta__form,
+.header__form {
+  display: flex;
+  margin: 0 auto;
+
+  @include response(tab-port) {
+    display: block;
+  }
+
+  &-input,
+  &-btn {
+    height: 7rem !important;
+    font-size: 1.8rem;
+  }
+
+  &-input {
+    min-width: 50rem;
+    max-width: 100%;
+
+    @include response(tab-port) {
+      display: block;
+      height: 6rem;
+      margin: 1rem auto;
+    }
+  }
+  &-btn {
+    background-color: $color-primary;
+    color: $color-dark;
+    font-size: 3rem;
+    line-height: 1;
+    padding: 0.8rem 3rem;
+
+    @include response(tab-port) {
+      margin-top: 1.5rem;
+      width: fit-content;
+    }
+  }
+}
